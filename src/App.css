@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Acme", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #009e94 0%, #0d943d 100%);
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: black;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 30px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 32px;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #35ad2f;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, #35ad2f 0%, #94d42c 100%);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #00c0b3;
+}
+
+.todo-button.edit {
+  background: linear-gradient(90deg, #00c0b3 0%, #008cac 100%);
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  color: #fff;
+  background: linear-gradient(90deg, #1db954 0%, #055e18 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-text {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #fff;
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.remove-icon {
+  color: #fff;
+  font-size: 22px;
+}
